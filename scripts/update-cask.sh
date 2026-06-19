@@ -26,7 +26,7 @@ trap 'rm -f "$tmp"' EXIT
 download_release() {
   if command -v gh >/dev/null 2>&1 && gh auth status >/dev/null 2>&1; then
     echo "Downloading ${TAG} via gh (authenticated)"
-    gh release download "$TAG" --repo "$REPO" --pattern "$ASSET" --output "$tmp"
+    gh release download "$TAG" --repo "$REPO" --pattern "$ASSET" --clobber --output "$tmp"
     return
   fi
 
