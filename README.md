@@ -6,11 +6,12 @@ Docker dog.
 ## Install
 
 ```bash
-brew install --cask partrocks/tap/dogger --no-quarantine
+brew install --cask partrocks/tap/dogger
 ```
 
-`--no-quarantine` is required because Dogger is currently distributed **unsigned**
-(no Apple Developer ID yet); it tells macOS not to quarantine the downloaded app.
+Dogger is currently **unsigned** (no Apple Developer ID yet). The cask strips
+macOS quarantine after install so the app opens without the "damaged" Gatekeeper
+dialog.
 
 Upgrade later with:
 

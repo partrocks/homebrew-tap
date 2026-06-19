@@ -11,6 +11,13 @@ cask "dogger" do
 
   app "Dogger.app"
 
+  # Unsigned build: strip Gatekeeper quarantine after install (Homebrew removed
+  # --no-quarantine in 4.7+).
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-dr", "com.apple.quarantine", "#{appdir}/Dogger.app"]
+  end
+
   zap trash: [
     "~/.dogger",
   ]
