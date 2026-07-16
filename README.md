@@ -16,8 +16,13 @@ dialog.
 Upgrade later with:
 
 ```bash
+brew update
 brew upgrade --cask dogger
 ```
+
+Run `brew update` first so Homebrew fetches the latest tap. Without it,
+`brew upgrade` may report the current version is already installed even when a
+newer Dogger release is available.
 
 ## Updating the cask for a new release
 
