@@ -9,8 +9,25 @@ Docker dog.
 brew install --cask partrocks/tap/dogger
 ```
 
-The cask installs both `Dogger.app` and the bundled `dogger` command. For
-example, run `dogger ls` to list tasks after installation.
+The cask installs both `Dogger.app` and the bundled `dogger` command on your
+`PATH`.
+
+```bash
+# List aliases, task names, and projects
+dogger ls
+
+# Run a task by its globally unique alias
+dogger run database-migrate
+
+# Show help or the installed version
+dogger --help
+dogger --version
+```
+
+Task aliases are lowercase slugs managed in the app. `dogger run` streams
+output, blocks until completion, records the run in the same history as the
+desktop app, and returns the task's exit code. Docker and the task's configured
+container must already be running.
 
 Dogger is currently **unsigned** (no Apple Developer ID yet). The cask strips
 macOS quarantine after install so the app opens without the "damaged" Gatekeeper
