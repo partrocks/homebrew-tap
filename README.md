@@ -9,6 +9,9 @@ Docker dog.
 brew install --cask partrocks/tap/dogger
 ```
 
+The cask installs both `Dogger.app` and the bundled `dogger` command. For
+example, run `dogger ls` to list tasks after installation.
+
 Dogger is currently **unsigned** (no Apple Developer ID yet). The cask strips
 macOS quarantine after install so the app opens without the "damaged" Gatekeeper
 dialog.

@@ -10,6 +10,7 @@ cask "dogger" do
   depends_on arch: :arm64
 
   app "Dogger.app"
+  binary "#{appdir}/Dogger.app/Contents/MacOS/dogger"
 
   # Unsigned build: strip Gatekeeper quarantine after install (Homebrew removed
   # --no-quarantine in 4.7+).
