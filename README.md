@@ -9,8 +9,8 @@ Docker dog.
 brew install --cask partrocks/tap/dogger
 ```
 
-The cask installs both `Dogger.app` and the bundled `dogger` command on your
-`PATH`.
+The cask installs `Dogger.app`, the bundled `dogger` command on your `PATH`, and
+completion scripts for Zsh, Bash, and Fish.
 
 ```bash
 # List aliases, task names, and projects
@@ -27,7 +27,8 @@ dogger --version
 Task aliases are lowercase slugs managed in the app. `dogger run` streams
 output, blocks until completion, records the run in the same history as the
 desktop app, and returns the task's exit code. Docker and the task's configured
-container must already be running.
+container must already be running. Shell completion queries current aliases and
+shows their task, project, and context without running them.
 
 Dogger is currently **unsigned** (no Apple Developer ID yet). The cask strips
 macOS quarantine after install so the app opens without the "damaged" Gatekeeper
