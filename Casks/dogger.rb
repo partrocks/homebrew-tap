@@ -1,6 +1,6 @@
 cask "dogger" do
-  version "0.2.34"
-  sha256 "e111a3261d09088a8fe689d434e7510d4f1feeb6b442d27014913d7a1db92dd1"
+  version "0.2.35"
+  sha256 "5d79cc9f977dcc58a33048964d3cee8badab0e19a8b81ed55c698448f801d839"
 
   url "https://github.com/partrocks/dogger/releases/download/v#{version}/Dogger_#{version}_aarch64.dmg"
   name "Dogger"
