@@ -16,12 +16,5 @@ cask "dogger" do
   fish_completion "#{appdir}/Dogger.app/Contents/Resources/completions/dogger.fish"
   zsh_completion "#{appdir}/Dogger.app/Contents/Resources/completions/_dogger"
 
-  # Unsigned build: strip Gatekeeper quarantine after install (Homebrew removed
-  # --no-quarantine in 4.7+).
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/Dogger.app"]
-  end
-
   zap trash: "~/.dogger"
 end
