@@ -1,8 +1,8 @@
 cask "dogger" do
-  version "0.3.30"
-  sha256 "ebf47b6a7730b57cb124d15593eb0ee236a8cdfdbc57b42811b199562968c18e"
+  version "0.3.34"
+  sha256 "bb65caa7472e1b639a06f9263a96866af275cc1b0fbfd4c92cc75752642eb87d"
 
-  url "https://github.com/partrocks/releases/releases/download/dogger-v#{version}/Dogger_#{version}_aarch64.dmg"
+  url "https://doggerapp.com/releases/dogger-v#{version}/Dogger_#{version}_aarch64.dmg"
   name "Dogger"
   desc "Your development Docker dog — run reusable shell-script tasks in containers"
   homepage "https://doggerapp.com/"
