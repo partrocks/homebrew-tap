@@ -1,6 +1,6 @@
 cask "dogger" do
-  version "0.6.5"
-  sha256 "51d27a6acbcb7fc8fd32f6f455b98ff8c284c65dfeff57e6f6ba819b871a6418"
+  version "0.6.6"
+  sha256 "c883a64378df2b9f841e39f0bf6a4afc95b39bcdc13a1cdb573f270a97ebe157"
 
   url "https://doggerapp.com/releases/dogger-v#{version}/Dogger_#{version}_aarch64.dmg"
   name "Dogger"
