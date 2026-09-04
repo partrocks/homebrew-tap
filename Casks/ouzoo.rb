@@ -11,7 +11,6 @@ cask "ouzoo" do
   depends_on :macos
 
   app "Ouzoo.app"
-  binary "#{appdir}/Ouzoo.app/Contents/MacOS/ouzoo"
 
   zap trash: "~/.ouzoo"
 end

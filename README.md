@@ -8,7 +8,7 @@ Homebrew tap for PartRocks macOS apps.
 brew install --cask partrocks/tap/ouzoo
 ```
 
-Installs `Ouzoo.app` and the `ouzoo` CLI. See [ouzoo.app](https://ouzoo.app).
+Installs `Ouzoo.app`. See [ouzoo.app](https://ouzoo.app).
 
 Ouzoo CI updates `Casks/ouzoo.rb` `version` and `sha256` on each release.
 
