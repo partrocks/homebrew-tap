@@ -10,7 +10,27 @@ brew install --cask partrocks/tap/ouzoo
 
 Installs `Ouzoo.app`. See [ouzoo.app](https://ouzoo.app).
 
-Ouzoo CI updates `Casks/ouzoo.rb` `version` and `sha256` on each release.
+Ouzoo CI updates `Casks/ouzoo.rb` `version` and `sha256` on each release
+(`HOMEBREW_TAP_TOKEN` on `partrocks/ouzoo`). A missing token fails that
+release.
+
+Upgrade later with:
+
+```bash
+brew update
+brew upgrade --cask ouzoo
+```
+
+**Manual** (only if CI skipped or you need to fix a cask by hand):
+
+```bash
+scripts/update-ouzoo-cask.sh 0.2.6
+git commit -am "ouzoo 0.2.6"
+git push
+```
+
+Edit `Casks/ouzoo.rb` directly for cask structure changes.
+Those are **not** overwritten by CI — only `version` and `sha256` are updated.
 
 ## Dogger
 

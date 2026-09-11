@@ -1,6 +1,6 @@
 cask "ouzoo" do
-  version "0.0.1"
-  sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+  version "0.2.6"
+  sha256 "c32f167e1308f223b130f88206aaaf44afc58f238a9908f5bcc0b2a2e8ba4a3d"
 
   url "https://ouzoo.app/releases/ouzoo-v#{version}/Ouzoo_#{version}_aarch64.dmg"
   name "Ouzoo"
@@ -12,5 +12,5 @@ cask "ouzoo" do
 
   app "Ouzoo.app"
 
-  zap trash: "~/.ouzoo"
+  zap trash: "~/.config/rocks/ouzoo"
 end
