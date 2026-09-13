@@ -1,6 +1,6 @@
 cask "ouzoo" do
-  version "0.2.7"
-  sha256 "3b0133b8a0d72d7b9d996f5d54b7f6e3da99f32f88c20d44ed5aa020025cdd34"
+  version "0.2.8"
+  sha256 "01523752dc6275fe32203288964038ae8928b6a331eea82468de4835eb24161d"
 
   url "https://ouzoo.app/releases/ouzoo-v#{version}/Ouzoo_#{version}_aarch64.dmg"
   name "Ouzoo"
