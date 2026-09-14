@@ -1,6 +1,41 @@
 # partrocks/homebrew-tap
 
-Homebrew tap for PartRocks macOS apps.
+Homebrew tap for PartRocks macOS apps and CLIs.
+
+## cliq
+
+```bash
+brew install --cask partrocks/tap/cliq
+```
+
+Installs the `cliq` binary and `cliq.1` man page. See [partrocks/cliq](https://github.com/partrocks/cliq).
+
+cliq is a CLI, not a `.app`. Releases are unsigned; Homebrew installs the
+binary and man page from this tap's public `cliq-v*` GitHub release
+(the cliq source repo stays private).
+
+cliq CI publishes that archive, then updates `Casks/cliq.rb` `version`
+and `sha256` (`HOMEBREW_TAP_TOKEN` on `partrocks/cliq`). A missing token
+fails that release.
+
+Upgrade later with:
+
+```bash
+brew update
+brew upgrade --cask cliq
+```
+
+**Manual** (only if CI skipped or you need to fix a cask by hand):
+
+```bash
+scripts/update-cliq-cask.sh 0.3.2
+git commit -am "cliq 0.3.2"
+git push
+```
+
+Edit `Casks/cliq.rb` directly for cask structure changes.
+Those are **not** overwritten by CI — only `version` and `sha256` are updated.
+
 
 ## Ouzoo
 
