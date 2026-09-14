@@ -10,9 +10,9 @@ brew install --cask partrocks/tap/cliq
 
 Installs the `cliq` binary and `cliq.1` man page. See [partrocks/cliq](https://github.com/partrocks/cliq).
 
-cliq is a CLI, not a `.app`. Releases are unsigned; Homebrew installs the
-binary and man page from this tap's public `cliq-v*` GitHub release
-(the cliq source repo stays private).
+cliq is a CLI, not a `.app`. Releases are signed with a Developer ID and
+notarized by Apple. Homebrew installs the binary and man page from this
+tap's public `cliq-v*` GitHub release (the cliq source repo stays private).
 
 cliq CI publishes that archive, then updates `Casks/cliq.rb` `version`
 and `sha256` (`HOMEBREW_TAP_TOKEN` on `partrocks/cliq`). A missing token
