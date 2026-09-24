@@ -1,6 +1,6 @@
 cask "cliq" do
-  version "0.5.4"
-  sha256 "d725377b40a0b187ed8404a5d4b808a98743572a8c7c0336c5974d44b299202f"
+  version "0.5.5"
+  sha256 "7656fd10679c56a8ed3452a1836ce5c157eb8026964f7cb6a82a9f7b5d057ca0"
 
   url "https://github.com/partrocks/homebrew-tap/releases/download/cliq-v#{version}/cliq_#{version}_aarch64.tar.gz"
   name "cliq"
